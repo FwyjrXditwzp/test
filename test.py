@@ -7,3 +7,8 @@ def wrap(func):
 @wrap
 def func(x):
     return x 
+
+
+def estLen(string : str):
+    counter = 0
+    return len(string)
