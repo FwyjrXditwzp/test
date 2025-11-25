@@ -1,14 +1,10 @@
-def wrap(func):
-    def inner(a):
-       print(a) 
-       return func(a)
-    return inner
-
-@wrap
-def func(x):
-    return x 
+def gen(x):
+    counter = 1
+    while True:
+        if counter == x : break
+        counter *= 2
+        yield counter 
 
 
-def estLen(string : str):
-    counter = 0
-    return len(string)
+for i in gen(5):
+    print(i)
