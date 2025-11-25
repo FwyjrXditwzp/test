@@ -5,5 +5,5 @@ def wrap(func):
     return inner
 
 @wrap
-def func():
-    return 1 
+def func(x):
+    return x 
